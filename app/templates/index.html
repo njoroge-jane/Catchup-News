@@ -1,1 +1,26 @@
 {% extends 'base.html' %}
+
+<!-- Styles block -->
+
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{% endblock %}
+<!-- Content block -->
+
+{% block content%}
+<div class="container-fluid">
+  <div class="row">
+{% for news_source in news_sources %}
+<div class="card col-md-4 container border">
+<h3 class="card-header ">{{ news_source.name }}</h3>
+<p class="card-body">{{news_source.description}}</p>
+<p>{{news_source.url}}</p>
+<p>{{news_source.country}}</p>
+</div>
+
+
+{% endfor %}
+</div>
+</div>
+{% endblock %}
