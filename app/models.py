@@ -7,7 +7,7 @@ class Source:
         self.url = url
         self.country = country
 
-class Source:
+class Article:
 
     def __init__(self,id,title,image,description,url,author,publishedAt):
         self.id =id
