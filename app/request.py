@@ -56,7 +56,7 @@ def process_results(source_list):
     return news_sources
 
 
-def get_article():
+def get_article(id):
     '''
     Function that gets the json response to our url request
     '''
