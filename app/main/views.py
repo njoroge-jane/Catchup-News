@@ -6,7 +6,7 @@ from ..request import get_article, get_news
 def index():
     news_sources= get_news()
     print(news_sources)
-    title = 'Home - Welcome to The best Movie Review Website Online'
+    title = 'Home - Welcome to CatchUP-News'
     return render_template('index.html', title = title, news_sources = news_sources )
 
 @main.route('/article/<string:id>')
