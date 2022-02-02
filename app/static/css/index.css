@@ -1,13 +1,19 @@
 h3 {
   color: orange;
-  font-family: 'Supermercado One', cursive;
+  font-family: "Supermercado One", cursive;
 }
-.index, body{
-  background-image: url('https://images.pexels.com/photos/7966867/pexels-photo-7966867.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'),linear-gradient(rgba(0, 0, 0, 0.87),rgba(0, 0, 0, 0.87),rgba(0, 0, 0, 0.863));
+.index,
+body {
+  background-image: url("https://images.pexels.com/photos/7966867/pexels-photo-7966867.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"),
+    linear-gradient(
+      rgba(0, 0, 0, 0.87),
+      rgba(0, 0, 0, 0.87),
+      rgba(0, 0, 0, 0.863)
+    );
 }
-.source{
+.source {
   background-color: rgba(245, 253, 253, 0.794);
 }
-.index p{
+.index p {
   font-size: large;
 }

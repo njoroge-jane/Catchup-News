@@ -1,5 +1,3 @@
-
-  
 from flask import Blueprint, Flask
 
 

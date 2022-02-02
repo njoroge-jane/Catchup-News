@@ -12,18 +12,33 @@
 <!-- Content block -->
 
 {% block content%}
-<h1  class="text-center text-danger display-4 fw-bolder fst-italic "><u>>>>NEWS SOURCES<<<</u></h1>
+<h1 class="text-center text-danger display-4 fw-bolder fst-italic">
+  <u>>>>NEWS SOURCES<<<</u>
+</h1>
 <div class="container-fluid index">
   <div class="row">
     {% for news_source in news_sources %}
-    <div class="col-md-3 ">
-      <div class="card m-2 shadow rounded-2 border border-primary p-2 text-center">
-      <h3 class="card-header display-4">{{ news_source.name }}</h3>
-      <p class="card-body source">{{news_source.description | truncate(100)}}</p>
-      <p class="text-danger fst-italic"><a href="{{news_source.url}}"> {{news_source.url}}</a></p>
-      <a href="/article/{{news_source.id}}" class="text-danger fst-italic fw-bold display-6"> Articles</a>
-      <p style="background-color: navy;" class="card-footer text-white">COUNTRY: {{news_source.country}}</p>
-    </div>
+    <div class="col-md-3">
+      <div
+        class="card m-2 shadow rounded-2 border border-primary p-2 text-center"
+      >
+        <h3 class="card-header display-4">{{ news_source.name }}</h3>
+        <p class="card-body source">
+          {{news_source.description | truncate(100)}}
+        </p>
+        <p class="text-danger fst-italic">
+          <a href="{{news_source.url}}"> {{news_source.url}}</a>
+        </p>
+        <a
+          href="/article/{{news_source.id}}"
+          class="text-danger fst-italic fw-bold display-6"
+        >
+          Articles</a
+        >
+        <p style="background-color: navy" class="card-footer text-white">
+          COUNTRY: {{news_source.country}}
+        </p>
+      </div>
     </div>
 
     {% endfor %}

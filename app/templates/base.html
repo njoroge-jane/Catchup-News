@@ -1,13 +1,17 @@
-{% extends 'bootstrap/base.html'%}
-
-{% block styles%} {{ super() }}
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet">
+{% extends 'bootstrap/base.html'%} {% block styles%} {{ super() }}
+<link
+  rel="stylesheet"
+  href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+  crossorigin="anonymous"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap"
+  rel="stylesheet"
+/>
 {% endblock %}
 
 <!-- Navbar block  -->
-{% block navbar %} 
-{% include 'navbar.html' %} 
-{% endblock %}
+{% block navbar %} {% include 'navbar.html' %} {% endblock %}
