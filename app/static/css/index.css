@@ -4,15 +4,10 @@ h3 {
 }
 .index,
 body {
-  background-image: url("https://images.pexels.com/photos/7966867/pexels-photo-7966867.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"),
-    linear-gradient(
-      rgba(0, 0, 0, 0.87),
-      rgba(0, 0, 0, 0.87),
-      rgba(0, 0, 0, 0.863)
-    );
+  background-color: rgb(247, 241, 232);
 }
 .source {
-  background-color: rgba(245, 253, 253, 0.794);
+  background-color: rgba(245, 253, 253, 0.74);
 }
 .index p {
   font-size: large;
