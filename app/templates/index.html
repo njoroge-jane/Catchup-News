@@ -13,13 +13,14 @@
 
 {% block content%}
 <div class="container">
-  <div class="row">
+  <div class="">
     {% for news_source in news_sources %}
-    <div class="col-md-3 border m-4">
+    <div class="col-md-3 border m-2 ">
       <h3 class="card-header display-3">{{ news_source.name }}</h3>
       <p class="card-body">{{news_source.description}}</p>
-      <p><a href="/article/{{news_source.id}}"> {{news_source.url}}</a></p>
-      <p>{{news_source.country}}</p>
+      <p> {{news_source.url}}</p>
+      <a href="/article/{{news_source.id}}"> Articles</a>
+      <p>COUNTRY: {{news_source.country}}</p>
     </div>
 
     {% endfor %}

@@ -69,7 +69,7 @@ def get_article(id):
         news_articles = None
 
         if get_article_response['articles']:
-            news_article_list = get_article_response['article']
+            news_article_list = get_article_response['articles']
             news_articles = process_articles(news_article_list)
 
     return news_articles
@@ -87,7 +87,7 @@ def process_articles(article_list):
     '''
     news_articles = []
     for article in article_list:
-        id = article.get('id')
+        id = article.get('source').get('id')
         title = article.get('title')
         image = article.get('urlToImage')
         description = article.get('description')
@@ -97,5 +97,5 @@ def process_articles(article_list):
         new_artical = Article(id, title, image, description,
                               url, author, publishedAt)
         news_articles.append(new_artical)
-
+    print(news_articles)
     return news_articles

@@ -9,8 +9,7 @@ def index():
     title = 'Home - Welcome to The best Movie Review Website Online'
     return render_template('index.html', title = title, news_sources = news_sources )
 
-@main.route('/article/<int:id>')
+@main.route('/article/<string:id>')
 def article(id):
-     news_articles= get_article(id)
-     
-     return render_template('article.html',news_articles = news_articles)    
+    news_articles= get_article(id)
+    return render_template('article.html', news_articles = news_articles)    
