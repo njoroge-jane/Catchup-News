@@ -60,7 +60,7 @@ def get_article(id):
     '''
     Function that gets the json response to our url request
     '''
-    get_article_url = f'{base_url}everything?q=Apple&from=2022-01-31&sortBy=popularity&apiKey={api_key}'
+    get_article_url = f'{base_url}top-headlines?sources={id}&apiKey={api_key}'
 
     with urllib.request.urlopen(get_article_url) as url:
         get_article_data = url.read()
